@@ -1,8 +1,14 @@
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* You can adjust the weight as needed */
+  font-style: normal;
+}
+
+/* Apply the DM Sans class to specific elements */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* Example of applying DM Sans to body */
+  font-family: "DM Sans", sans-serif;
 }
 
 header {
@@ -94,7 +100,8 @@ header {
 
 .developmental-wonders-section {
   background-color: #ffffff; /* White background */
-  color: black; /* Black text */
+  color: #002863;
+  ; /* Black text */
   text-align: center;
   padding: 50px 20px;
 }
@@ -126,6 +133,8 @@ header {
 /* New Section Styles */
 .audio-visual-section {
   text-align: center;
+  color: #002863;
+  ;
   padding: 26px 212px;;
   background-color: #ffffff;
 }
@@ -218,6 +227,8 @@ header {
 
 .brilliant-minds-text {
   font-size: 1.5em;
+  color: #002863;
+  ;
   
 }
 .brilliant-minds-images {
@@ -304,17 +315,20 @@ footer {
   justify-content: space-between; /* Space between items */
   align-items: center; /* Center items vertically */
   max-width: 1200px; /* Maximum width */
-  margin: 0 auto; /* Center align horizontally */
+  margin: 0 auto;
+  color: #002863; /* Center align horizontally */
 }
 
 .footer-text {
   flex: 1; /* Take remaining space */
   text-align: left; /* Align text to the left */
+  color: #002863;
 }
 
 .footer-text p {
   font-style: italic; /* Italicize text */
-  margin: 0; /* Remove default margin */
+  margin: 0;
+   /* Remove default margin */
 }
 
 .footer-image {
