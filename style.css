@@ -28,6 +28,7 @@ header {
 
 .logo {
   margin-right: auto; /* This ensures the logo is at the left */
+  cursor: pointer;
 }
 
 .logo img {
@@ -174,6 +175,7 @@ header {
 }
 
 .red-quote {
+  font-family: sans-serif;
   color: red;
   font-size: 4em;
   vertical-align: middle;
@@ -340,5 +342,49 @@ footer {
   max-width: 100%; /* Maximum width for the image */
   height: auto; /* Maintain aspect ratio */
 }
+@media (max-width: 768px) {
+  .nav-links li:not(:nth-child(1)):not(:nth-child(5)) {
+    display: none; /* Hide all nav links except logo and Book a Free Demo */
+  }
 
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .nav-links li:nth-child(1),
+  .nav-links li:nth-child(5) {
+    display: inline-block; /* Show logo and Book a Free Demo */
+  }
+
+  .audio-visual-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .audio-visual-item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .call-to-action-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .call-to-action-section .cta-text {
+    margin-bottom: 20px;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section .footer-image {
+    margin-top: 20px;
+  }
+}
